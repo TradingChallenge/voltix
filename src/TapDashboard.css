@@ -1,0 +1,262 @@
+.tap-dashboard {
+  min-height: 100vh;
+  color: #fff;
+  background:
+    radial-gradient(ellipse at 50% 35%, #542a9440, transparent 55%),
+    #080811;
+  overflow: hidden;
+}
+
+.tap-nav {
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff12;
+}
+
+.tap-content {
+  width: min(600px, 92%);
+  margin: auto;
+  padding: 45px 0;
+}
+
+.tap-welcome {
+  text-align: center;
+}
+
+.tap-welcome h1 {
+  margin: 12px 0;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.tap-welcome p {
+  color: #928ba2;
+  font-size: 12px;
+}
+
+.tap-points {
+  margin: 35px 0 20px;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #a477ff45;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #201536, #11101d);
+  box-shadow: 0 0 35px #9b65ff12;
+}
+
+.tap-points > span {
+  color: #b5a0e5;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.tap-points strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.tap-points small {
+  color: #a477ff;
+  font-size: 15px;
+}
+
+.tap-arena {
+  padding: 35px 15px;
+  text-align: center;
+}
+
+.tap-label {
+  display: block;
+  margin-bottom: 25px;
+  color: #b9a2e9;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.tap-button {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border: 2px solid #a477ff;
+  border-radius: 50%;
+  color: white;
+  background:
+    radial-gradient(circle, #46236e 0%, #211331 55%, #0c0b16 100%);
+  box-shadow:
+    0 0 25px #a477ff80,
+    0 0 70px #884cff35,
+    inset 0 0 35px #a477ff30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: transform .12s, box-shadow .12s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tap-button:active,
+.tap-button.tap-active {
+  transform: scale(.93);
+  box-shadow:
+    0 0 40px #b78cff,
+    0 0 100px #884cff75,
+    inset 0 0 50px #c7a5ff70;
+}
+
+.tap-button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.tap-symbol {
+  font-size: 95px;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 0 25px #c9a5ff;
+}
+
+.tap-brand {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+
+.tap-arena > p {
+  margin-top: 25px;
+  color: #55e7ce;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.energy-card,
+.boost-card {
+  margin-top: 20px;
+  padding: 23px;
+  border: 1px solid #a58aff30;
+  border-radius: 16px;
+  background: linear-gradient(120deg, #1b1430, #100f1c);
+}
+
+.energy-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.energy-heading span {
+  color: #55e7ce;
+  letter-spacing: 2px;
+}
+
+.energy-heading strong {
+  color: white;
+}
+
+.energy-track {
+  height: 10px;
+  margin-top: 17px;
+  border-radius: 20px;
+  background: #ffffff12;
+  overflow: hidden;
+}
+
+.energy-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7a42ff, #55e7ce);
+  box-shadow: 0 0 15px #55e7ce80;
+  transition: width .3s;
+}
+
+.energy-card > p {
+  margin-bottom: 0;
+  color: #928ba2;
+  font-size: 11px;
+}
+
+.boost-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.boost-card h2 {
+  margin: 8px 0;
+  font-size: 19px;
+}
+
+.boost-card p {
+  color: #928ba2;
+  font-size: 11px;
+}
+
+.boost-info {
+  text-align: right;
+}
+
+.boost-info > strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #55e7ce;
+  font-size: 25px;
+}
+
+.boost-info button {
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  background: linear-gradient(100deg, #7845e9, #a477ff);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.boost-info button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.tap-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 45px;
+  color: #625b70;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  .tap-content {
+    padding-top: 30px;
+  }
+
+  .tap-welcome h1 {
+    font-size: 26px;
+  }
+
+  .tap-points strong {
+    font-size: 40px;
+  }
+
+  .tap-button {
+    width: 190px;
+    height: 190px;
+  }
+
+  .tap-symbol {
+    font-size: 80px;
+  }
+}
